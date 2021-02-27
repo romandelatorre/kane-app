@@ -1,44 +1,35 @@
 // import logo from './logo.svg';
 import './App.scss';
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade} from "swiper/core";
+import "swiper/swiper-bundle.css";
+
 import prueba2  from './assets/prueba2.jpg'
 import facebook from './assets/facebook.svg'
 import google from './assets/google.svg'
 import linkedin from './assets/linkedin.svg'
 
+SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade]);
+
 const App = () => {
-	const settings = {
-		dots: true,
-		fade: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1
-	  };
+	
 	return (
 		<div className="styles">
-			{/* <Slider {...settings}>
-				<div>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRylc_IRJie4twKLlpjdPd8X92YrauJmY_yRA&usqp=CAU" alt=""/>
-				</div>
-				<div>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRylc_IRJie4twKLlpjdPd8X92YrauJmY_yRA&usqp=CAU" alt=""/>
-				</div>
-				<div>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRylc_IRJie4twKLlpjdPd8X92YrauJmY_yRA&usqp=CAU" alt=""/>
-				</div>
-				<div>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRylc_IRJie4twKLlpjdPd8X92YrauJmY_yRA&usqp=CAU" alt=""/>
-				</div>
-				<div>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRylc_IRJie4twKLlpjdPd8X92YrauJmY_yRA&usqp=CAU" alt=""/>
-				</div>
-				<div>
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRylc_IRJie4twKLlpjdPd8X92YrauJmY_yRA&usqp=CAU" alt=""/>
-				</div>
-			</Slider> */}
 			<div className="styles__left">
-				<img src={prueba2} alt=""/>
+				<Swiper autoplay={{ delay: 3000 }} loop={true} pagination>
+					<SwiperSlide>
+						<img src={prueba2} alt=""/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={prueba2} alt=""/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={prueba2} alt=""/>
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={prueba2} alt=""/>
+					</SwiperSlide>
+				</Swiper>
 			</div>
 			<div className="styles__right">
 				<div className="styles__right__content">	

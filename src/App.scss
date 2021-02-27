@@ -84,3 +84,35 @@
         }
     }
 }
+
+.swiper-container {
+    list-style: none;
+    height: 100vh;
+  }
+ 
+.swiper-pagination-bullets{
+    bottom: 5rem;
+}
+.swiper-pagination-bullet{
+    background-color: white !important;
+    opacity: 1 !important;
+    width: 14px !important;
+    height: 14px !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #F9B76B !important;
+}
+  
+//   .pagination {
+//     bottom: 0;
+//     padding-bottom: 4px;
+//   }
+  
+//   .slide {
+//     text-align: center;
+//     height: 320px;
+//     line-height: 320px;
+//     background: #364d79;
+//     overflow: hidden;
+//   }
+  
