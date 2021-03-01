@@ -7,3 +7,9 @@ body{
   font-family: 'Poppins', sans-serif;
   
 }
+
+// Variables
+@import 'vars';
+
+// Mixins
+@import 'mixins/responsive';
