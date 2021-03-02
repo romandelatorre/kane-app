@@ -1,11 +1,10 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Autoplay, EffectFade, Scrollbar, A11y} from "swiper/core";
-
+// STYLES
 import './index.scss'
-import "swiper/swiper-bundle.css";
 
+// ASSETS
 import calendary from '../../assets/icons/calendary.png'
 import students from '../../assets/icons/students.png'
 import graph from '../../assets/icons/graph.png'
@@ -15,11 +14,11 @@ import jet from '../../assets/icons/jet.png'
 import person from '../../assets/icons/person.png'
 import embudo from '../../assets/icons/embudo.png'
 
-SwiperCore.use([Navigation, Pagination, Autoplay, EffectFade, Scrollbar, A11y]);
 
 const Home = () => {
     return (
         <>
+            <Navbar/>
             <div className='container'>
                 <div className='container__calendar'>
                     <div>

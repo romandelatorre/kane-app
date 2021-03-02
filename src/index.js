@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/main.scss';
-import Login from './components/Login';
-import Home from "./components/Home";
-import Navbar from './components/Navbar'
+import Router from './router'
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <Navbar/>
-        <Home/>
-		{/* <Login /> */}
+        <Router/>
     </React.StrictMode>,
   document.getElementById('root')
 );
