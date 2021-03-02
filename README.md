@@ -12,4 +12,6 @@
 
 ## NOTA 
 
-El Framework utilizado es React, en la parte de estilos se utilizo SASS y Material desing 
+El Framework utilizado es React, en la parte de estilos se utilizo SASS y Material desing.
+
+Para el swiper se utilizaron otras imagenes debido a que en el XD estaban en una resolucion baja, con textos y con los bullets del swiper.
