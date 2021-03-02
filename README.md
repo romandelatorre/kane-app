@@ -2,7 +2,7 @@
 
 ## PASOS PARA EJECUTAR EL PROYECTO
 
-1) Clonar el repositorio ejecutando el comando (git clone git clone https://romandelatorre010@bitbucket.org/romandelatorre010/kane.git)
+1) Clonar el repositorio ejecutando el comando (git clone git clone https://github.com/romandelatorre/kane-app)
 
 2) Ejecutar en la consola del proyecto (yarn install) el cual instalara las dependencias necesarias para el correcto funcionamiento del mismo.
 
